@@ -1,0 +1,4 @@
+.mask {
+    mask: url("../public/blob.svg") center no-repeat;
+    -webkit-mask: url("../public/blob.svg") center no-repeat;
+}
