@@ -1,13 +1,16 @@
-import Image from "next/image"
 import { Raleway } from "next/font/google"
 
-const raleway = Raleway({
-    subsets: ['latin']
-})
+import Head from "next/head"
+import Image from "next/image"
+
+const raleway = Raleway({ subsets: ['latin'] })
 
 export default function Title() {
-    return (<div className="flex justify-center items-center p-2">
-        <div className="mask">
+    return (<div className="flex justify-center items-center p-2 m-5 select-none">
+        <Head>
+            <title>Souvik Sarkar | Home</title>
+        </Head>
+        <div className="mask pointer-events-none">
             <Image
                 src={"/portrait.jpg"}
                 alt={"Souvik Sarkar"}
