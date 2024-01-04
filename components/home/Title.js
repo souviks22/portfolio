@@ -19,8 +19,14 @@ export default function Title() {
             />
         </div>
         <div className={raleway.className}>
-            <h1 className="text-5xl py-2">Souvik Sarkar</h1>
-            <h2 className="text-2xl py-1">Software Engineer</h2>
+            <section className="py-5">
+                <p>Hi I'm</p>
+                <h2 className="text-5xl py-2">Souvik Sarkar</h2>
+            </section>
+            <section className="group">
+                <h3 className="text-2xl">Software Development Engineer</h3>
+                <p className="absolute hidden group-hover:block py-3" layout>🌟 Yes I do code</p>
+            </section>
         </div>
     </div>)
 }
