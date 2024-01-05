@@ -25,7 +25,7 @@ export default function Title() {
             </section>
             <section className="group">
                 <h3 className="text-2xl">Software Development Engineer</h3>
-                <p className="absolute hidden group-hover:block py-3" layout>🌟 Yes I do code</p>
+                <p className="absolute hidden group-hover:block py-3">🌟 Yes I do code</p>
             </section>
         </div>
     </div>)
