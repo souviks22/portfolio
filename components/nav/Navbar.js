@@ -18,6 +18,7 @@ export default function Navbar() {
     }
 
     const toggleHandler = () => setIsOpened(isOpened => !isOpened)
+    const navCloseHandler = () => setIsOpened(false)
     const windowResizeHandler = () => setIsBigView(window.innerWidth > 640)
 
     useEffect(() => {
@@ -38,11 +39,11 @@ export default function Navbar() {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
-                    <NavLink label={'Home'} href={'/'} />
-                    <NavLink label={'Education'} href={'/education'} />
-                    <NavLink label={'Work Experience'} href={'/work-experience'} />
-                    <NavLink label={'Projects'} href={'projects'} />
-                    <NavLink label={'Contact'} href={'contact'} />
+                    <NavLink label={'Home'} href={'/'} onClick={navCloseHandler} />
+                    <NavLink label={'Education'} href={'/education'} onClick={navCloseHandler} />
+                    <NavLink label={'Work Experience'} href={'/work-experience'} onClick={navCloseHandler} />
+                    <NavLink label={'Projects'} href={'projects'} onClick={navCloseHandler} />
+                    <NavLink label={'Contact'} href={'contact'} onClick={navCloseHandler} />
                 </motion.div>
             }
         </AnimatePresence>

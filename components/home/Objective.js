@@ -12,7 +12,7 @@ export default function Objective({ label, content, tags = [] }) {
     const expansionHandler = () => setIsContracted(isContracted => !isContracted)
 
     return (<div className="flex justify-center p-2 mb-10 cursor-default">
-        <div className="sm:w-3/5 px-5 sm:px-1">
+        <div className="sm:w-3/5">
             <section className={`${roboto.className} py-3`}>
                 <h2 className="text-3xl">{label}</h2>
             </section>
