@@ -24,7 +24,11 @@ export default function Objective({ label, content, tags = [] }) {
                 }
             </section>
             <section className="flex flex-wrap">
-                {tags.map(tag => <span className="text-sm text-sky-700 bg-sky-200 px-3 py-2 mr-2 mb-2 rounded">{tag}</span>)}
+                {tags.map((tag, i) =>
+                    <span key={i} className="text-sm text-sky-700 bg-sky-200 px-3 py-2 mr-2 mb-2 rounded hover:bg-sky-300 transition-colors duration-200">
+                        {tag}
+                    </span>)
+                }
             </section>
         </div>
     </div>)

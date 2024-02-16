@@ -6,7 +6,7 @@ import Objective from "@/components/home/Objective"
 export default function Home() {
     return (<Container>
         <Head>
-            <title>Souvik Sarkar | Home</title>
+            <title>Home | Souvik Sarkar</title>
         </Head>
         <Title />
         <Objective
@@ -17,7 +17,7 @@ export default function Home() {
         <Objective
             label={"Why am I interested in SWE?"}
             content={"My deep fascination with Software Engineering stems from the profound joy I find in crafting innovative solutions that address real-world challenges. Having worked extensively on web and mobile applications, I relish the process of transforming conceptual ideas into functional, user-centric products. The intellectual allure of Data Structures and Algorithms adds a layer of complexity that I find invigorating, driving me to continually enhance my problem-solving skills. The rapid advancements in modern technology, with its potential to achieve the seemingly impossible, excite me and keep my passion ablaze. Beyond the technical aspects, the collaborative nature of software development, where diverse teams synergize to overcome challenges, is an aspect I highly value. In essence, Software Engineering is not merely about writing code for me; it's about creating solutions that resonate with users and contribute positively to society, making it a field that aligns seamlessly with my professional aspirations."}
-            tags={['Utility', 'Algorithms', 'Satisfaction']}
+            tags={['Utility', 'Algorithms', 'Mental Growth', 'Satisfaction']}
         />
     </Container>)
 }

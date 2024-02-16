@@ -27,9 +27,11 @@ export default function Navbar() {
         window.addEventListener('resize', windowResizeHandler)
     }, [])
 
-    return (<div className={`fixed top-0 z-10 flex flex-col sm:flex-row justify-center items-center w-screen ${roboto.className} text-lg p-3 ${(isScrolled || isOpened) && 'bg-white'} transition-colors duration-200 ease-in-out select-none`}>
-        <div className="w-screen text-3xl flex justify-end sm:hidden px-5 py-2" onClick={toggleHandler}>
-            <FaBars />
+    return (<nav className={`fixed top-0 z-10 flex flex-col sm:flex-row justify-center items-center w-screen ${roboto.className} text-lg p-3 ${(isScrolled || isOpened) && 'bg-white'} transition-colors duration-200 ease-in-out select-none bg-opacity-90`}>
+        <div layout className="w-screen text-3xl flex justify-end sm:hidden px-5 py-2" onClick={toggleHandler}>
+            <div className={`${isOpened ? 'rotate-90' : 'rotate-0'} transition-transform duration-200`}>
+                <FaBars />
+            </div>
         </div>
         <AnimatePresence>
             {(isBigView || isOpened) &&
@@ -47,5 +49,5 @@ export default function Navbar() {
                 </motion.div>
             }
         </AnimatePresence>
-    </div >)
+    </nav >)
 }
