@@ -13,7 +13,7 @@ export default function Navbar() {
     const [isBigView, setIsBigView] = useState(null)
 
     const scrollHandler = () => {
-        if (window.scrollY > 100) setIsScrolled(true)
+        if (window.scrollY > 50) setIsScrolled(true)
         else setIsScrolled(false)
     }
 
