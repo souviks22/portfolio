@@ -19,9 +19,9 @@ export default function Title() {
                 <p>Hi I'm</p>
                 <h2 className="text-5xl py-2">Souvik Sarkar</h2>
             </section>
-            <section className="group">
+            <section className="group pb-10">
                 <h3 className="text-2xl">Software Development Engineer</h3>
-                <p className="absolute hidden group-hover:block py-3">🌟 Yes I do code</p>
+                <p className="absolute sm:hidden group-hover:block py-3">🌟 Yes I do code for fun</p>
             </section>
         </div>
     </div>)

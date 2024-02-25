@@ -26,6 +26,7 @@ export default function School({ name, promo, course, period, location, marks, s
                     className="bg-slate-100 flex flex-col w-full sm:w-3/5 rounded-b-md p-3"
                     initial={{ translateY: -40, opacity: 0 }}
                     animate={{ translateY: 0, opacity: 100 }}
+                    exit={{ opacity: 0, animationDuration: 100 }}
                 >
                     <div className="flex items-center mb-3">
                         <span className="mr-3"><FaUserGraduate /></span>
